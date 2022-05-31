@@ -2,5 +2,4 @@
 str = "Holberton School"
 str1 = str * 3
 str2 = str[0:9]
-print(str1)
-print(str2)
+print(f"{str1}\n{str2}")
