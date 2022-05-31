@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod u+x *.py | ./*.py $PYFILE
+chmod u+x main.py | ./main.py $PYFILE
