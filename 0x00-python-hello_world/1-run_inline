@@ -1,5 +1,2 @@
 #!/bin/bash
-echo '#!/usr/bin/python3' >> inline.py
-echo $PYCODE >> inline.py
-chmod u+x inline.py
-./inline.py
+echo '#!/usr/bin/python3' >> inline.py && echo $PYCODE >> inline.py && chmod u+x inline.py && ./inline.py
