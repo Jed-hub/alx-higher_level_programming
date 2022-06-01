@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 for a in range(1, 100):
 
-    if a < 10:
-        print(f'0{a}', end=', ')
+    if a < 99:
+        print(f'0{a:d}'if a < 10 else f'{a:d}', end=', ')
 
     else:
-        print(a)
+        print(f'{a:d}')
