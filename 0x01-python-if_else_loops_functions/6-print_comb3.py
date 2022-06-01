@@ -5,6 +5,5 @@ for a in range(0, 9):
         if b > a:
             if a != 8 or b != 9:
                 print("{0}{1}".format(a, b), end=', ')
-            
             else:
                 print("{0}{1}".format(a, b))
