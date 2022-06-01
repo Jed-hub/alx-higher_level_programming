@@ -14,4 +14,3 @@ def fizzbuzz():
             result = a
 
         print(result, end=' ')
-
