@@ -12,8 +12,9 @@ if __name__ == "__main__":
 
     else:
 
-        if argv[2] != "+" and argv[2] != "-"
-        and argv[2] != "*" and argv[2] != "/":
+        a = argv[2]
+        if a != "+" and a != "-" and a != "*" and a != "/":
+
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
 
