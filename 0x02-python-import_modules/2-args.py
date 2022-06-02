@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     else:
         print(i - 1, "arguments:")
-       # for a in argv:
+
         n = 1
 
         while n < i:
