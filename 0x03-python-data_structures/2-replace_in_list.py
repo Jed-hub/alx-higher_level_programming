@@ -4,7 +4,7 @@ def replace_in_list(my_list, idx, element):
         i += 1
     if idx < 0:
         return my_list
-    elif idx > i - 1:
+    elif idx >= i - 1:
         return my_list
     else:
         my_list[idx] = element
