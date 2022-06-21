@@ -3,7 +3,7 @@ def safe_print_list_integers(my_list=[], x=0):
     for n in range(x):
         try:
             print("{:d}".format(my_list[n]), end="")
-        except (ValueError, TypeError, NameError):
+        except (ValueError, TypeError, AttributeError):
             pass
             x = n - 1
     print("")
