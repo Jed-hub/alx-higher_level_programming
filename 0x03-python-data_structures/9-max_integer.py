@@ -5,7 +5,8 @@ def max_integer(my_list=[]):
     else:
         n = 0
         for r in range(len(my_list)):
-            if my_list[r] > n:
-                m = my_list[r]
-            n = m
+            if type(my_list[r]) is int:
+                if my_list[r] > n:
+                    m = my_list[r]
+                n = m
         return m
