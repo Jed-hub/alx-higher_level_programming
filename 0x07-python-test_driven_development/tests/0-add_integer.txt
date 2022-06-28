@@ -10,17 +10,11 @@
 98
 >>> print(add_integer(-10, -5))
 -15
->>> print(add_integer(-98))
-0
->>> try:
-...     print(add_integer(4, "School"))
-... except Exception as e:
-...     print(e)
-... 
-b must be an integer
->>> try:
-...     print(add_integer(None))
-... except Exception as e:
-...     print(e)
-... 
-a must be an integer
+>>> add_integer(3.5, 1.7)
+5
+>>> add_integer('school', 42)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(42, 'School')
+Traceback (most recent call last):
+TypeError: b must be an integer
