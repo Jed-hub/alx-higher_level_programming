@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-""" 
+"""
 This module prints the string
 My name is <first_name> <last_name>
 """
+
 
 def say_my_name(first_name, last_name=""):
     """ The function takes 2 strings as arguments
