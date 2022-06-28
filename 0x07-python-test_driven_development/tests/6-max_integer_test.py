@@ -1,16 +1,11 @@
 #!/usr/bin/python3
-""" Here is a short script to 
-test max_integer([..])"""
-
+"""Unittest for max_integer([..])
+"""
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
-# A testcase is created by subclassing unittest.TestCase
 class TestMaxInteger(unittest.TestCase):
 
-    # All tests you make must be passable by the function below
-    # The unittest module provides tools for constructing and running tests
-    # test_ means it's a method
     def test_upper(self):
         self.assertEqual(max_integer([6, 7, 8, 9]), 9)
 
