@@ -5,6 +5,7 @@ and raises exceptions when an error occures
 It returns the result
 """
 
+
 def add_integer(a, b=98):
     """ Takes 2  integers a and b as argument
     Returns the addition on the two integers
