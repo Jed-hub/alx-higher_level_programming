@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+"""
+The module with the class Square
+"""
 Rectangle = __import__('9-rectangle').Rectangle
-"""
-The module with class BaseGeometry
-"""
 
 
 class Square(Rectangle):
