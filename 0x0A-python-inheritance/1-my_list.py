@@ -4,6 +4,7 @@ Module my list with one class
 and one method
 """
 
+
 class MyList(list):
     """
     This class contains one function
