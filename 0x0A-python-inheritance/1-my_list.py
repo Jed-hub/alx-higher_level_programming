@@ -15,10 +15,4 @@ class MyList(list):
         This method prints the list
         sorted (ascending sort)
         """
-        my_list = []
-        for element in self:
-            if type(element) is int:
-                my_list.append(element)
-        my_list.sort()
-
-        print(my_list)
+        print(sorted(list(self)))
