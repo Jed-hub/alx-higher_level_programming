@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Script that adds all arguments to a 
+"""
+Script that adds all arguments to a
 Python list and save them to a file.
 """
 
@@ -13,7 +14,7 @@ filename = "add_item.json"
 
 try:
     listt = load_from_json_file(filename)
-except:
+except Exception as e:
     listt = []
 
 for arg in argv[1:]:
