@@ -6,8 +6,10 @@ Module with append_write function
 
 def append_write(filename="", text=""):
     """
-    This function appends a string at the end of a
-    text file and returns the number of characters written
+    Description: Function that writes a string to a text file.
+    Args:
+        filename: file to write.
+        text: text to add to the filename.
     """
     with open(filename, 'a', encoding="utf8") as a_file:
         a_file.write(text)
