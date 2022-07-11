@@ -2,9 +2,8 @@
 """
 Second module
 """
-
-
 from models.base import Base
+
 
 class Rectangle(Base):
     """
@@ -26,45 +25,52 @@ class Rectangle(Base):
         Width getter
         """
         return self.width
+
     @width.setter
     def width(self, width):
         """
         width setter
         """
         self.width = width
+
     @property
     def height(self):
         """
         Heigth getter
         """
         return self.height
+
     @height.setter
     def height(self, height):
         """
         Height setter
         """
         self.height = height
+
     @property
     def x(self):
         """
         x getter
         """
         return self.x
+
     @x.setter
     def x(self, x=0):
         """
         x setter
         """
         self.x = x
+
     @property
     def y(self):
         """
         y getter
         """
-        return self.y
+        return self.__y
+
     @y.setter
     def y(self, y=0):
         """
         y setter
         """
-        self.y = y
+        self.__y = y
