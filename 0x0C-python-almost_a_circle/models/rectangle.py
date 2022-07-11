@@ -121,3 +121,22 @@ class Rectangle(Base):
         return ("[Rectangle] (" + str(self.id) + ") "
                 + str(self.x) + "/" + str(self.y) + " - "
                 + str(self.width) + "/" + str(self.height))
+
+    def update(self, *args):
+        """
+        the update method assigns an argument
+        to each attribute
+        """
+        arg_list = []
+        for arg in args:
+            arg_list.append(arg)
+        if len(arg_list) == 1:
+            self.id = arg_list[0]
+        if len(arg_list) == 2:
+            self.width = arg_list[1]
+        if len(arg_list) == 3:
+            self.height = arg_list[2]
+        if len(arg_list) == 4:
+            self.x = arg_list[3]
+        if len(arg_list) == 5:
+            self.y = arg_list[4]
