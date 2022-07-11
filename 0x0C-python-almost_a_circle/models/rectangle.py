@@ -24,42 +24,42 @@ class Rectangle(Base):
         """
         Width getter
         """
-        return self.width
+        return self.__width
 
     @width.setter
     def width(self, width):
         """
         width setter
         """
-        self.width = width
+        self.__width = width
 
     @property
     def height(self):
         """
         Heigth getter
         """
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, height):
         """
         Height setter
         """
-        self.height = height
+        self.__height = height
 
     @property
     def x(self):
         """
         x getter
         """
-        return self.x
+        return self.__x
 
     @x.setter
     def x(self, x=0):
         """
         x setter
         """
-        self.x = x
+        self.__x = x
 
     @property
     def y(self):
