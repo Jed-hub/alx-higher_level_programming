@@ -102,14 +102,13 @@ class Rectangle(Base):
         prints in stdout the rectangle instance
         with the character #
         """
-        if self.x and self.y:
-            print()
-            print()
+        if self.y:
+            for n in range(self.y):
+                print()
         for h in range(self.height):
             if self.x:
-                print(end=" ")
-            if self.y:
-                print(end=" ")
+                for n in range(self.x):
+                    print(end=" ")
             for w in range(self.width):
                 print("#", end="")
             print()
