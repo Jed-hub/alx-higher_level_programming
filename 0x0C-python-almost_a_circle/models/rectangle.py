@@ -112,4 +112,6 @@ class Rectangle(Base):
         str method that returns
         [Rectangle] (<id>) <x>/<y> - <width>/<height>
         """
-        return "{Rectangle] ("+str(self.id)+") " + str(self.x)+"/"+str(self.y) + " - " + str(self.width)+"/"+str(self.height)
+        return ("{Rectangle] (" + str(self.id) + ") "
+                + str(self.x) + "/" + str(self.y) + " - "
+                + str(self.width) + "/" + str(self.height))
