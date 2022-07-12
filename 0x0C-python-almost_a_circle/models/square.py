@@ -67,9 +67,9 @@ class Square(Rectangle):
             arg_list.append(arg)
         if len(arg_list) >= 1:
             self.id = arg_list[0]
-        if len(arg_list) == 2:
+        if len(arg_list) >= 2:
             self.width = arg_list[1]
-        if len(arg_list) == 3:
+        if len(arg_list) >= 3:
             self.x = arg_list[2]
-        if len(arg_list) == 4:
+        if len(arg_list) >= 4:
             self.y = arg_list[3]
