@@ -13,11 +13,6 @@ class Square(Rectangle):
         """
         Initialization
         """
-        """ 
-        self.size = size
-        width = size
-        height = size
-        """
         super().__init__(size, size, x, y, id=None)
         self.size = size
 
