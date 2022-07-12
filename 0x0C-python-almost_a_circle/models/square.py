@@ -13,12 +13,13 @@ class Square(Rectangle):
         """
         Initialization
         """
+        """ 
         self.size = size
         width = size
         height = size
-        super().__init__(width, height, x, y, id=None)
-        self.width = size
-        self.height = size
+        """
+        super().__init__(size, size, x, y, id=None)
+        self.size = size
 
     def __str__(self):
         """
@@ -26,7 +27,7 @@ class Square(Rectangle):
         """
         return ("[Square] (" + str(self.id) + ") "
                 + str(self.x) + "/" + str(self.y)
-                + " - " + str(self.width))
+                + " - " + str(self.size))
 
     @property
     def size(self):
@@ -57,7 +58,7 @@ class Square(Rectangle):
             if 'id' in arg_dict:
                 self.id = arg_dict['id']
             if 'size' in arg_dict:
-                self.width = arg_dict['size']
+                self.size = arg_dict['size']
             if 'x' in arg_dict:
                 self.x = arg_dict['x']
             if 'y' in arg_dict:
@@ -68,7 +69,7 @@ class Square(Rectangle):
         if len(arg_list) >= 1:
             self.id = arg_list[0]
         if len(arg_list) >= 2:
-            self.width = arg_list[1]
+            self.size = arg_list[1]
         if len(arg_list) >= 3:
             self.x = arg_list[2]
         if len(arg_list) >= 4:
