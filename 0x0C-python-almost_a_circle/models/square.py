@@ -90,4 +90,3 @@ class Square(Rectangle):
             r_dict['y'] = self.y
 
         return r_dict
-
