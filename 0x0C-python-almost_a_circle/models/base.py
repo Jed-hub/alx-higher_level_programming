@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""
+The module base
+"""
 import json
 import csv
 
@@ -61,7 +65,7 @@ class Base:
                 for item in dic:
                     listt.append(cls.create(**item))
                 return listt
-        except:
+        except Exception:
             return listt
 
     @classmethod
