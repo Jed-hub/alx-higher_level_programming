@@ -78,7 +78,7 @@ class Square(Rectangle):
         """
         the method to_dictionary returns
         the dictionary representation of a rectangle
-        """
+        
         r_dict = {}
         if self.id:
             r_dict['id'] = self.id
@@ -89,4 +89,7 @@ class Square(Rectangle):
         if self.y:
             r_dict['y'] = self.y
 
-        return r_dict
+        return r_dict"""
+
+        r_dict = ["id", "size", "x", "y"]
+        return {key: getattr(self, key) for key in r_dict}
