@@ -24,7 +24,6 @@ class Square(Rectangle):
         """
         str method returns a string
         """
-        super().__str__(self)
         return ("[Square] (" + str(self.id) + ") "
                 + str(self.x) + "/" + str(self.y)
                 + " - " + str(self.width))
