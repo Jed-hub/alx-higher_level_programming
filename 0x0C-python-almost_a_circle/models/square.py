@@ -73,3 +73,21 @@ class Square(Rectangle):
             self.x = arg_list[2]
         if len(arg_list) >= 4:
             self.y = arg_list[3]
+
+    def to_dictionary(self):
+        """
+        the method to_dictionary returns
+        the dictionary representation of a rectangle
+        """
+        r_dict = {}
+        if self.id:
+            r_dict['id'] = self.id
+        if self.width:
+            r_dict['size'] = self.width
+        if self.x:
+            r_dict['x'] = self.x
+        if self.y:
+            r_dict['y'] = self.y
+
+        return r_dict
+
