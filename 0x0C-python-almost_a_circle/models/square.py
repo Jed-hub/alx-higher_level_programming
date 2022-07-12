@@ -26,7 +26,7 @@ class Square(Rectangle):
         """
         return ("[Square] (" + str(self.id) + ") "
                 + str(self.x) + "/" + str(self.y)
-                + " - " + str(self.width))
+                + " - " + str(self.size))
 
     @property
     def size(self):
