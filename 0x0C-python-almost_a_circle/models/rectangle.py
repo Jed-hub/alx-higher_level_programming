@@ -163,15 +163,15 @@ class Rectangle(Base):
         the dictionary representation of a rectangle
         """
         r_dict = {}
-        if self.id:
-            r_dict['id'] = self.id
-        if self.width:
-            r_dict['width'] = self.width
-        if self.height:
-            r_dict['height'] = self.height
         if self.x:
             r_dict['x'] = self.x
         if self.y:
             r_dict['y'] = self.y
+        if self.id:
+            r_dict['id'] = self.id
+        if self.height:
+            r_dict['height'] = self.height
+        if self.width:
+            r_dict['width'] = self.width
 
         return r_dict
