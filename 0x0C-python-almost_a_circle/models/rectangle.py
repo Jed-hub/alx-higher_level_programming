@@ -164,7 +164,7 @@ class Rectangle(Base):
         """
         r_dict = {}
         if self.id:
-           r_dict['id'] = self.id
+            r_dict['id'] = self.id
         if self.width:
             r_dict['width'] = self.width
         if self.height:
