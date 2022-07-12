@@ -82,10 +82,10 @@ class Square(Rectangle):
         r_dict = {}
         if self.id:
             r_dict['id'] = self.id
-        if self.width:
-            r_dict['size'] = self.size
         if self.x:
             r_dict['x'] = self.x
+        if self.size:
+            r_dict['size'] = self.size
         if self.y:
             r_dict['y'] = self.y
 
