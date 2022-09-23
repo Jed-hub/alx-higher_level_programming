@@ -1,17 +1,23 @@
 #!/usr/bin/python3
-"""Takes in Github repo nd owner name to list
-10 commits (from the most recent to oldest)"""
+"""
+Takes your Github credentials (username and password) and
+uses the Github API to display your commits
+"""
+import requests
+from sys import argv
 
 
 if __name__ == "__main__":
-    import requests
-    import sys
-
-    r = requests.get('https://api.github.com/repos/{}/{}/commits'
-                     .format(sys.argv[2], sys.argv[1]))
-    if r.status_code >= 400:
-        print('None')
-    else:
-        for com in r.json()[:10]:
-            print("{}: {}".format(com.get('sha'),
-                                  com.get('commit').get('author').get('name')))
+    i = 0
+    try:
+        res = requests.get("https://api.github.com/repos/{}/{}/commits".
+                           format(argv[2], argv[1])).json()
+        for commit in res:
+            sha = commit.get("sha")
+            author = commit.get("commit").get("author").get("name")
+            i += 1
+            print("{}: {}".format(sha, author))
+            if i == 10:
+                break
+    except:
+        print("Not a valid PARAMETER")
