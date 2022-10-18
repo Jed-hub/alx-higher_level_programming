@@ -2,9 +2,8 @@
 const process = require('process');
 const request = require('request');
 
-let episode = parseInt(process.argv[2]);
-let api = 'https://swapi-api.hbtn.io/api/films/';
-let url = api + episode
+const episode = parseInt(process.argv[2]);
+const url = 'https://swapi-api.hbtn.io/api/films/' + episode;
 let data;
 
 request(url, function (error, response, body) {
@@ -12,6 +11,6 @@ request(url, function (error, response, body) {
     console.log(error);
   } else {
     data = JSON.parse(body);
-    console.log(data['title']);
+    console.log(data.title);
   }
 });
