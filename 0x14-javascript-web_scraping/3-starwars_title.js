@@ -3,7 +3,8 @@ const process = require('process');
 const request = require('request');
 
 let episode = parseInt(process.argv[2]);
-let url = 'https://swapi-api.hbtn.io/api/films/' + episode;
+let api = 'https://swapi-api.hbtn.io/api/films/';
+let url = api + episode
 let data;
 
 request(url, function (error, response, body) {
